@@ -1,0 +1,32 @@
+/* id selectors */
+h1 {
+  color: red;
+  font-size: 2rem;
+}
+
+/* id selectors and selector grouping */
+#check,
+p {
+  color: green;
+}
+h2,
+h3 {
+  color: blue;
+  font-size: 2rem;
+}
+
+/* class selectors */
+.test {
+  color: orange;
+}
+.many {
+  background: grey;
+}
+
+/* div and span */
+div {
+  background-color: yellow;
+}
+span {
+  text-transform: uppercase;
+}
