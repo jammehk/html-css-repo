@@ -221,14 +221,26 @@ button {
   left: 20%;
   z-index: 0;
 } */
-/* before and after pseudo-elements */
+/* before, after, first-line, first letter pseudo-element selectors, pseudo class selectors*/
 
-p::before {
+/* p::before {
   content: "Hello ";
   font-weight: bold;
   font-size: 2rem;
   color: red;
   font-style: italic;
+}
+h2::first-line {
+  color: red;
+  font-weight: normal;
+}
+h2::first-letter {
+  font-size: 3rem;
+  font-style: italic;
+}
+div:hover {
+  width: 70vw;
+  height: 70vh;
 }
 div {
   width: 50vw;
@@ -251,4 +263,28 @@ div::before {
   right: 50px;
   background: orange;
   z-index: -1;
+} */
+
+/* Transformation, Transition, Animation */
+div {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+}
+.one {
+  background: red;
+  transform: translate(20px, 20px);
+  /* transform:translateX (50%)*/
+  transform: rotate(100deg);
+  /* transform: rotateX(100deg); */
+}
+.two {
+  background: green;
+  transform: scale(0.5, 0.5);
+  /*transform:scaleX(20 */
+}
+.three {
+  background: blue;
+  transform: skew(60deg, -40deg);
+  /* transform:skewX(40deg) */
 }
