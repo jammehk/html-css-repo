@@ -1,11 +1,11 @@
-/* id selectors */
-h1 {
+/* id selectors, pixels */
+/* h1 {
   color: red;
   font-size: 2rem;
-}
+} */
 
-/* id selectors and selector grouping */
-#check,
+/* id selectors, selector grouping*/
+/* #check,
 p {
   color: green;
 }
@@ -13,20 +13,242 @@ h2,
 h3 {
   color: blue;
   font-size: 2rem;
-}
+} */
 
-/* class selectors */
-.test {
-  color: orange;
+/* class selectors; rgb practice */
+/* .test {
+  color: rgb(136, 255, 0);
 }
 .many {
-  background: grey;
-}
+  background: rgb(128, 128, 128);
+} */
 
 /* div and span */
-div {
+/* div {
   background-color: yellow;
-}
-span {
+} */
+/* span {
   text-transform: uppercase;
+} */
+/* vh and vw */
+/* .banner {
+  width: 50vw;
+  height: 50vh;
+  background: red;
+}
+.header {
+  width: 100vw;
+  height: calc(100vh - 100px);
+  background: blue;
+} */
+
+/* CSS Box Model */
+/* .box1 {
+  background: green;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: black;
+  margin: -40px; 
+  outline: solid 5px green;
+  outline-offset: 5px;
+} */
+/* .box2 {
+  width: 70vw;
+  background: black;
+  padding: 20px 30px;
+  padding: 20px 20px 20px 20px
+  border-bottom: solid red 5px;
+  border-radius: 20px;
+}
+ul li {
+  list-style-type: none;
+  display: inline-block;
+  background: orange;
+  margin: 4px;
+  box-sizing: border-box;
+} */
+
+/* Background Image */
+/* div {
+  min-height: 100vh;
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.large {
+  background: url("./Images/reg-image.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; */
+/* }
+.small {
+  background: url("./Images/reg-image.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* .regular {
+  background: url("./Images/reg-image.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+} */
+
+/* .gradient {
+   background: linear-gradient(to top, red, green); 
+   background: linear-gradient(300deg, red, green); 
+   background: linear-gradient(300deg, rgba(25, 100, 200), rgba(100, 20, 16)); 
+} */
+
+/* Float, clear and overflow properties */
+/* main {
+  border: solid 5px red;
+  margin-top: 20px;
+  overflow: hidden;
+}
+img {
+  float: left;
+  margin-right: 50px;
+} */
+
+/* p {
+  clear: right;
+} */
+
+/* float property */
+/*div{
+  margin-top: 20px;
+}
+ .c1{
+  background: red;
+  float: left;
+  height: 100vh;
+  width: 33.33%;
+  border: solid black 2px;
+  box-sizing: border-box;
+}
+.c2{
+  background: blue;
+  float: left;
+  height: 100vh;
+  width: 33.33%;
+  border: solid black 2px;
+  box-sizing: border-box;
+  
+}
+.c3{
+  background: green;
+  float: left;
+  height: 100vh;
+  width: 33.33%;
+  border: solid black 2px;
+  box-sizing: border-box;
+  
+} */
+
+/* Element Poitioning */
+/* div {
+  border: solid 5px red;
+  width: 50vw;
+  position: relative;
+}
+.rel {
+  background: grey;
+  position: relative;
+  left: 20%;
+  bottom: 50px;
+}
+.abs {
+  background: green;
+  position: absolute;
+  bottom: 100px;
+}
+button {
+  background: blue;
+  position: sticky;
+  bottom: 0;
+  height: 20px;
+  color: white;
+} */
+
+/* Media Querries */
+/* body {
+  background: grey;
+}
+.banner {
+  background: white;
+  border-radius: 25px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+  .banner {
+    background: black;
+    color: white;
+  }
+  body {
+    background: yellow;
+  }
+} */
+
+/* z-index */
+/* img {
+  width: 200px;
+  position: absolute;
+  margin: 5px;
+}
+.banner {
+  border: solid black 2px;
+  position: relative;
+}
+.small {
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.large {
+  top: 100px;
+  left: 10%;
+  z-index: 1;
+}
+.regular {
+  top: 200px;
+  left: 20%;
+  z-index: 0;
+} */
+/* before and after pseudo-elements */
+
+p::before {
+  content: "Hello ";
+  font-weight: bold;
+  font-size: 2rem;
+  color: red;
+  font-style: italic;
+}
+div {
+  width: 50vw;
+  height: 50vh;
+  margin: 100px auto;
+  position: relative;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+div::before {
+  content: "";
+  border: solid grey 2px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  box-sizing: border-box;
+  bottom: 50px;
+  right: 50px;
+  background: orange;
+  z-index: -1;
 }
