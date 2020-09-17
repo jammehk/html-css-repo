@@ -266,25 +266,166 @@ div::before {
 } */
 
 /* Transformation, Transition, Animation */
-div {
+/* div {
   width: 150px;
   height: 150px;
   display: inline-block;
+  transition-property: background, border-radius, transform;
+  transition-duration: 1s, 2s;
+}
+div:hover {
+  background: coral;
+}
+.one:hover {
+  border-radius: 50%;
+}
+.three:hover {
+  transform: rotate(100deg);
 }
 .one {
   background: red;
   transform: translate(20px, 20px);
-  /* transform:translateX (50%)*/
-  transform: rotate(100deg);
-  /* transform: rotateX(100deg); */
+  transform:translateX (50%)
+  transform:rotate(100deg);
+  transform:rotateX(100deg);
 }
 .two {
   background: green;
   transform: scale(0.5, 0.5);
-  /*transform:scaleX(20 */
+  transform:scaleX(20 
 }
+
 .three {
   background: blue;
   transform: skew(60deg, -40deg);
-  /* transform:skewX(40deg) */
+  transform:skewX(40deg);
+} */
+/* div {
+  width: 100px;
+  height: 100px;
+  background: blue;
+  margin: 5px;
+  transition: all 1s;
 }
+div:hover {
+  transform: translateX(100px);
+}
+.ease {
+  transition-timing-function: ease;
+}
+.linear {
+  transition-timing-function: linear;
+}
+.ease-in {
+  transition-timing-function: ease-in;
+}
+.ease-out {
+  transition-timing-function: ease-out;
+}
+.ease-in {
+  transition-timing-function: ease-in-out;
+} */
+
+/* Animation */
+/* div {
+  width: 200px;
+  height: 100px;
+  margin: 5px;
+}
+.transition {
+  background: grey;
+  transition: all 2s linear;
+}
+.transition:hover {
+  background: coral;
+  transform: translateX(100px);
+}
+.animation {
+  background: grey;
+  animation-name: stuff;
+  animation-duration: 10s;
+  animation-iteration-count: 1;
+} */
+
+/* .animation:hover {
+  animation: stuff 10s 1;
+  animation-fill-mode: forwards;
+} */
+
+/* @keyframes stuff {
+  0% {
+    transform: translateX(20px);
+  }
+  50% {
+    transform: translateX(100px);
+    background: red;
+  }
+  75% {
+    transform: translateX(-200px);
+    background: yellow;
+  }
+  100% {
+    transform: translateX(200px);
+    background: green;
+  }
+} */
+/* CSS Variables */
+/* :root {
+  --mainColor: red;
+  --animationMain: all 4s linear;
+}
+h1 {
+  color: var(--mainColor);
+}
+h2 {
+  background: var(--mainColor);
+}
+p:hover {
+  color: var(--mainColor);
+  text-align: center;
+}
+p {
+  transition: var(--animationMain);
+} */
+/* div {
+  --secondColor: grey;
+}
+h2 {
+  color: var(--secondColor);
+} */
+/* Icons */
+/* i {
+  font-size: 50px;
+  color: blue;
+  border: green 2px solid;
+  padding: 10px;
+} */
+/* Text and Box Shadow */
+/* h1 {
+  text-shadow: 3px 1px 1px green;
+}
+.shadow {
+  width: 100px;
+  height: 100px;
+  background: red;
+  box-shadow: 2px 2px 2px green;
+}
+img {
+  width: 100%;
+  margin-top: 5px;
+  display: inline-block;
+}
+.big {
+  float: left;
+  width: 45%;
+  margin-right: 5%;
+  height: 250px;
+  object-fit: cover;
+}
+.regular {
+  float: left;
+  width: 45%;
+  margin-right: 5%;
+  height: 250px;
+  object-fit: cover;
+} */
